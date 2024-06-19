@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "alins": "^0.0.34",
+    "sass": "^1.74.1",
+    "vite": "^4.2.0",
+    "vite-plugin-alins": "^0.0.34"
+  },
+  "description": "Alins UI Framework",
+  "author": "NovaGrand"
+}
