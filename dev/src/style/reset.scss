@@ -1,0 +1,134 @@
+:root {
+  // 系统 4K 175% 放大的情况下，1rem 约等于 15px
+  //font-size: .8201vw;
+  // 系统 4K 175% 放大的情况下，1rem 约等于 1px
+  font-size: .05467vw;
+  font-family:"PingFang SC",Arial,"Microsoft YaHei","Georgia","Hiragino Sans GB",sans-serif;
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+  letter-spacing: .6px;
+  word-break: normal;
+  -moz-tab-size: 4;
+  line-height: .8; // 为便于单行文字水平对齐，使用低行高
+  tab-size: 4;
+  width: 100vw;height: 100vh;
+  scroll-behavior: smooth!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(255, 255, 255, 0.9);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+  text-decoration: inherit; /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+  vertical-align: inherit;
+  display: inline-block;
+  position: absolute;
+}
+a,b,code,font,em,i,img,input,label,strong,textarea,span,small,code, kbd, q, samp{
+  display: inline-block;
+}
+small {
+  font-size: 80%; /* Set font-size to 80% in `small` elements */
+}
+a{
+  background-color: transparent; /* Remove the gray background on active links in IE 10 */
+  color: #1976d2;
+  //color: #2D72D2;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover{
+    outline-width: 0; /* Remove the outline when hovering in all browsers */
+    text-decoration: underline;
+  }
+  &:visited{
+    //color: #1976d2;
+  }
+  &:active{
+    outline-width: 0;
+  }
+  &:link{
+    //color: #1976d2;
+  }
+}
+code, kbd, q, pre, samp {
+  font-family: monospace; /* Specify the font family of code elements */
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; /* Correct the cursor style of increment and decrement buttons in Chrome */
+}
+[type="search"] {
+  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Remove the inner padding in Chrome and Safari on macOS */
+}
+
+
+html{
+  overflow: hidden;
+}
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background: #ffffff;
+  width: 100vw;height: 100vh;
+  margin: 0;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  font-size: 15rem;
+}
+a{
+  display: inline-block;
+}
+// 去除的微信 ios 版点击时的蓝色边框
+a:focus,
+input:focus,
+p:focus,
+div:focus{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  //-webkit-user-modify:read-write-plaintext-only;
+}
+i{
+  font-style: normal;
+  font-weight: inherit;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  overflow: hidden;
+  scroll-behavior: auto;
+  //&::-webkit-scrollbar {
+  //  width: .8rem;
+  //}
+  //&::-webkit-scrollbar-thumb{
+  //  background: linear-gradient(45deg, rgba(37,41,89,.5), rgba(68,95,137,.4));
+  //  border-radius: 100px;
+  //  &:hover{
+  //    background-color: rgba(255,255,255,.12);
+  //  }
+  //}
+  //&::-webkit-scrollbar-button{
+  //  background: transparent;
+  //  height: 8px;
+  //}
+}
+

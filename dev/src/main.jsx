@@ -1,9 +1,19 @@
-/*
- * @Author: theajack
- * @Date: 2023-04-04 23:20:27
- * @Description: Coding something
- */
+import './style'
+import './router'
 
-import { Home } from './Home';
+function App(){
 
-<Home $mount='#app'/>;
+    return <div class='dashBoard'>
+        <aside>
+            <h1>Air for Alins</h1>
+            <a href='/' onclick={ router.push({ path:'/' }) }>Home</a>
+            <a href='/about' onclick={ router.push({ path:'/about'}) }>About</a>
+            <a href='/button' onclick={ router.push({ path:'/button' }) }>Button</a>
+        </aside>
+        <main class='container'>
+            { router.currentView }
+        </main>
+    </div>
+}
+
+<App $mount='#app'/>;

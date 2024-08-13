@@ -15,5 +15,8 @@
     "vite-plugin-alins": "^0.0.34"
   },
   "description": "Alins UI Framework",
-  "author": "NovaGrand"
+  "author": "NovaGrand",
+  "dependencies": {
+    "terser": "^5.31.5"
+  }
 }

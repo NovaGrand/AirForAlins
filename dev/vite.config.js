@@ -26,5 +26,17 @@ export default defineConfig(({ mode }) => {
         define: {
             __DEV__: mode === 'development',
         },
+        build:{
+            rollupOptions: {
+                 // https://rollupjs.org/guide/en/#outputmanualchunks
+                 output: {
+                   manualChunks: { // 自定义 chunk
+                     // 'route_about': [
+                     //   './src/pages/about',
+                     // ],
+                   },
+                 },
+               },
+        }
     };
 });
